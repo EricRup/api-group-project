@@ -1,0 +1,11 @@
+@(books: HashMap[Integer, Book])
+
+@main("BookAce API") {
+	<h1>Books Available For Display</h1>
+	<table>
+	<tr><td>ID</td><td>Title</td></tr>
+	@for((k,v) <- books) { 
+	<tr><td><a href="./book/@k">@k</a></td><td><a href="./book/@k">@v.title</a></td></tr>
+	}
+	</table>
+}

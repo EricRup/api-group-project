@@ -1,0 +1,13 @@
+@(id: Int)(book: Book)
+
+@main("BookAce API Detail") {
+	<h1>Book # @id : @book.title</h1>
+	<ul>
+	<li>ISBN: @book.isbn</li>
+	<li>Author: @book.author</li>
+	<li>Year: @book.year</li>
+	<li>Edition: @book.edition</li>
+	</ul>
+	
+	<a href="/book">Return to Book List</a>
+}

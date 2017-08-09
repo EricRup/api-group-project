@@ -3,10 +3,10 @@
 # ~~~~
 
 # Home Page
-GET     /                       controllers.BookController.list()
+GET     /                       controllers.Default.redirect(to = "book")
 
 # General Controller Implementation
-GET		/book/:id				controllers.BookController.detail(id: Long)
+GET		/book/:id				controllers.BookController.detail(id: Int)
 GET		/book					controllers.BookController.list()
 
 # Map static resources from the /public folder to the /assets URL path
